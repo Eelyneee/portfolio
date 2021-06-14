@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+:root {
+  --bg-color: rgb(255, 254, 251);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background: var(--bg-color);
+}
+
+section,
+footer {
+  padding: 5% 17%;
+}
+
+.container .box {
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 10rem;
+  position: relative;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*reveal letter*/
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter 3s steps(9) 1s forwards;
+}
+
+/*caret*/
+h1::after {
+  width: 0.125em; /*use em, cuz if the font-size change it can shrink with the font size*/
+  background: black;
+  animation: typewriter 3s steps(9) 1s forwards, blink 750ms steps(5) infinite;
+  /*
+    500ms -- animation speed
+    infinite -- keep on blink */
+}
+
+.subtitle {
+  color: black;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 5s forwards;
+}
+
+.subtitle2 {
+  color: black;
+  font-family: monospace;
+  font-size: 2rem;
+  padding-top: 15px;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 7s forwards;
+}
+
+h2 {
+  padding-bottom: 5vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(119, 159, 182);
+}
+
+.challenges,
+.school_projects,
+.contact {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 8s forwards;
+}
+
+.challenges .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.card {
+  height: 11rem;
+  padding: 1rem 2rem;
+  border: 2px solid hsl(0, 0%, 0%);
+  margin: 1rem 2rem;
+}
+
+.card:hover {
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+  height: 70%;
+  text-transform: capitalize;
+}
+
+.card-content .desc {
+  display: none;
+}
+
+.card-content:hover .desc {
+  display: block;
+}
+
+.school_projects .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.fmo-box {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.fmo {
+  margin: 2rem 3rem 1rem;
+  font-family: calibri;
+}
+
+footer p {
+  text-align: center;
+  font-family: calibri;
+  text-transform: uppercase;
+  color: rgba(49, 49, 49, 0.699);
+}
+
+.fa-2x {
+  margin: 0px 5px;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
