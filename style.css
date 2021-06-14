@@ -105,6 +105,8 @@ a:hover {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   height: 11rem;
   padding: 1rem 2rem;
   border: 2px solid hsl(0, 0%, 0%);
@@ -214,16 +216,17 @@ footer p {
   .fmo a {
     color: #00ffff;
   }
-  .card-content:hover .desc {
+  .card {
+    height: 15rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid hsl(0, 0%, 0%);
+    margin: 0.5rem 1rem;
+  }
+
+  .card-content .desc {
     display: block;
-    position: absolute;
-    top: 0;
-    background-color: cyan;
     color: black;
-    width: 100%;
+
     font-size: 12px;
-    font-family: georgia;
-    padding: 10px 20px;
-    border-radius: 10px;
   }
 }
