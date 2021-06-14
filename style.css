@@ -187,3 +187,43 @@ footer p {
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle,
+  .subtitle2 {
+    font-size: 1.5rem;
+  }
+
+  .challenges .card-container {
+    flex-direction: column;
+  }
+
+  .fmo-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fmo {
+    margin: 0.5rem 1rem 0.25rem;
+    font-family: calibri;
+  }
+  .fmo a {
+    color: #00ffff;
+  }
+  .card-content:hover .desc {
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: cyan;
+    color: black;
+    width: 100%;
+    font-size: 12px;
+    font-family: georgia;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
