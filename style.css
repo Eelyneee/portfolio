@@ -86,7 +86,7 @@ a {
   color: black;
 }
 a:hover {
-  color: rgb(119, 159, 182);
+  color: #00ffff;
 }
 
 .challenges,
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  box-shadow: 1px 1px #00ffff, 2px 2px #45ecec, 3px 3px #73d1d1;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
 }
