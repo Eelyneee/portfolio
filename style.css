@@ -90,6 +90,7 @@ a:hover {
 }
 
 .challenges,
+.about,
 .school_projects,
 .contact {
   opacity: 0;
@@ -145,7 +146,7 @@ a:hover {
 
 .school_projects .card-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-content: center;
 }
