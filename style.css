@@ -20,6 +20,21 @@ footer {
   padding: 5% 17%;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+nav a {
+  padding: 0% 1.5%;
+  color: rgba(0, 0, 0, 0.493);
+  opacity: 0;
+  transform: translateX(3rem);
+  animation: fadeInUp 2s ease 8s forwards;
+}
+
 .container .box {
   margin-top: 100px;
 }
@@ -44,17 +59,14 @@ h1::after {
 /*reveal letter*/
 h1::before {
   background: var(--bg-color);
-  animation: typewriter 3s steps(9) 1s forwards;
+  animation: typewriter 3s steps(9) 0.5s forwards;
 }
 
 /*caret*/
 h1::after {
   width: 0.125em; /*use em, cuz if the font-size change it can shrink with the font size*/
   background: black;
-  animation: typewriter 3s steps(9) 1s forwards, blink 750ms steps(5) infinite;
-  /*
-    500ms -- animation speed
-    infinite -- keep on blink */
+  animation: typewriter 3s steps(9) 0.5s forwards, blink 750ms steps(5) infinite;
 }
 
 .subtitle {
@@ -64,7 +76,7 @@ h1::after {
   font-weight: 400;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease 5s forwards;
+  animation: fadeInUp 2s ease 4s forwards;
 }
 
 .subtitle2 {
@@ -74,7 +86,7 @@ h1::after {
   padding-top: 15px;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease 7s forwards;
+  animation: fadeInUp 2s ease 6s forwards;
 }
 
 h2 {
